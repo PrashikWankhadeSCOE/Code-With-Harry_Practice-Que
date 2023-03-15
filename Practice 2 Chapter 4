@@ -1,0 +1,95 @@
+==== QUE 6 ======
+Write a program to find out what type of website from url
+Input : aldhfkjksafj.org
+Output : Organization url
+
+import java.util.Scanner;
+
+class Chw{
+        public static void main(String [] s){
+
+                Scanner sc = new Scanner(System.in);
+                System.out.println(" Enter the site");
+                String x = sc.nextLine();
+
+                if(x.endsWith(".com")){
+                        System.out.println(" Commercial Website");
+                }
+                else if (x.endsWith(".org")){
+                        System.out.println(" Organization Website");
+                }
+                else if (x.endsWith(".in")){
+                        System.out.println(" Indian Website");
+                }
+                else {
+                        System.out.println( " don't know where does site belong");
+                }
+        }
+}
+
+==== QUE 5 =====
+Write a program to check wheather the year entered by the user is leap year or not 
+Input : 2024
+Output : Yes it is the leap year
+
+import java.util.Scanner;
+
+class Chw{
+        public static void main(String [] s){
+
+                Scanner sc = new Scanner(System.in);
+                System.out.println(" Enter the site");
+                int x = sc.nextInt();
+
+                if(x%4==0){
+                        System.out.println( x +" it is a Leap Year");
+                }
+                else {
+                        System.out.println( x + " is not a Leap year");
+                }
+        }
+}
+
+==== QUE 3 ====
+Calculate the tax paid by the employee to to the government 
+Income Salary   Tax
+>2.5L           No tax
+2.5L - 5.0L     5%
+5.0L - 10.0L    10%
+10.0L - 20.0L   20%
+20.0L above     30%
+
+import java.util.Scanner;
+
+class Chw{
+        public static void main(String [] s){
+
+                Scanner sc = new Scanner(System.in);
+                System.out.println(" Enter the Salary");
+                double x = sc.nextDouble();
+
+                if (x < 250000){
+                        System.out.println(" Employee has no need to pay the tax \"Ewdyat tu swatah jag bhau barobr\"");                }
+                else if ( x>=250000 || x < 500000){
+                        System.out.println( (5*x)/100 + "is the tax you have to pay");
+                }
+                else if ( x>=500000 || x < 1000000){
+                        System.out.println( (10*x)/100 + "is the tax you have to pay");
+
+                }
+                else if ( x>=1000000 || x < 2000000){
+                        System.out.println( (20*x)/100 + "is the tax you have to pay");
+                }
+
+                else if ( x<2000000){
+                        System.out.println( (30*x)/100 + "is the tax you have to pay");
+
+                }
+        }
+}
+
+
+
+
+
+
