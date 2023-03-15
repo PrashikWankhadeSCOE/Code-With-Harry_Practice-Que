@@ -88,7 +88,30 @@ class Chw{
         }
 }
 
+==== QUE 2 ====
+Write a program to check wheather a student is fail or pass if it requires a total of 40% and atleast 33% in each subject to pass assume 3 subjects and take input from the user 
 
+import java.util.Scanner;
+
+class Chw{
+        public static void main(String [] s){
+
+                Scanner sc = new Scanner(System.in);
+                System.out.println(" Enter the Marks in Maths : ");
+                double Maths = sc.nextDouble();
+                System.out.println(" Enter the Marks in Gk : ");
+                double Gk = sc.nextDouble();
+                System.out.println(" Enter the Marks in English : ");
+                double English = sc.nextDouble();
+
+                if (Maths > 33 && Gk> 33 && English> 33 && (Maths+ English + Gk)/3 > 40 ){
+                        System.out.println( " Student is Pass " );
+                }
+                else {
+                        System.out.println( " fail" );
+                }
+        }
+}
 
 
 
