@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 class Sps{
@@ -6,44 +7,53 @@ class Sps{
                 String b = "Paper";
                 String c = "Sisor";
                 Scanner sc =new Scanner(System.in);
+                
+                String[] options = {"stone", "paper", "scissor"};
+                Random rand = new Random();
+                String randomOption = options[rand.nextInt(options.length)];
+                
+                for( int i = 1; i<=5; i++){
+                
+                        System.out.println("enter your first emote ");
+                        String x = sc.nextLine();
+                
+                        randomOption = options[rand.nextInt(options.length)];
 
+                        String y = randomOption;
+                        System.out.println("random option by pc\n" + randomOption);
+                
+                        if (x.equals("stone") && y.equals("paper")){
+                                System.out.println("paper wins");
+                        }
+                        else if(x.equals("stone") && y.equals("scissor")){
 
-                System.out.println("enter your first emote ");
-                String x = sc.nextLine();
-                System.out.println("enter your second emote ");
-                String y = sc.nextLine();
-                if (x.equals("stone") && y.equals("paper")){
-                        System.out.println("paper wins");
-                }
-                else if(x.equals("stone") && y.equals("scissor")){
+                                System.out.println("stone wins");
+                        }
+                        else if (x.equals("stone") && y.equals("stone")){
 
-                        System.out.println("stone wins");
-                }
-                else if (x.equals("stone") && y.equals("stone")){
-
-                        System.out.println("its tie");
-                }
-                else if (x.equals("paper") && y.equals("stone")){
-                        System.out.println("paper wins");
-                }
-                else if(x.equals("paper") && y.equals("paper")){
-                        System.out.println("its tie");
-                }
-                else if(x.equals("paper") && y.equals("scissor")){
-
-                        System.out.println("scissor wins");
-                }
-                else if(x.equals("scissor") && y.equals("paper")){
-                        System.out.println("scissor wins");
-                }
-                else if(x.equals("scissor") && y.equals("stone")){
-                        System.out.println("stone wins");
-                }
-                else if(x.equals("scissor") && y.equals("scissor")){
-                        System.out.println("its tie");
-                }
-                else{
-                        System.out.println("plz enter among stone , paper and scissors only");
+                                System.out.println("its tie");
+                        }       
+                        else if (x.equals("paper") && y.equals("stone")){
+                                System.out.println("paper wins");
+                        }
+                        else if(x.equals("paper") && y.equals("paper")){
+                                System.out.println("its tie");
+                        }               
+                        else if(x.equals("paper") && y.equals("scissor")){
+                                System.out.println("scissor wins");
+                        }
+                        else if(x.equals("scissor") && y.equals("paper")){
+                                System.out.println("scissor wins");
+                        }
+                        else if(x.equals("scissor") && y.equals("stone")){
+                                System.out.println("stone wins");
+                        }
+                        else if(x.equals("scissor") && y.equals("scissor")){
+                                System.out.println("its tie");
+                        }
+                        else{
+                                System.out.println("plz enter among stone , paper and scissors only");
+                        }
                 }
         }
 }
