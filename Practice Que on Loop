@@ -1,0 +1,121 @@
+Que 1 ==============================================
+Write the program to print the following
+
+* * * * 
+* * * 
+* *
+*
+
+import java.util.Scanner;
+
+class MyClass{
+        public static void main(String [] args){
+                Scanner sc = new Scanner(System.in);
+                System.out.println(" no of stars you wanna print ");
+                int N = sc.nextInt();
+                int tem = N;
+                for(int i = 1 ; i<=tem ;i++){
+                        for (int j = 1 ; j<= N; j++){
+                                System.out.print("* ");
+                        }
+                        System.out.println();
+                        N--;
+                }
+        }
+}
+
+Que 2 =============================================
+Write a program to sum 1st N even no 
+
+import java.util.Scanner;
+
+class MyClass{
+        public static void main(String [] args){
+                Scanner sc = new Scanner(System.in);
+                System.out.println(" enter the number n you want to add ");
+                int N = sc.nextInt();
+                int sum = 0;
+                for( int i = 1; i<= 2*N ; i++){
+
+                        if(i%2 == 0){
+
+                                sum = sum + i ;
+                        }
+                }
+                System.out.println(sum);
+        }
+}
+
+
+Que 3 =================================================
+Write a program to print the multiplication table of a given number 
+
+import java.util.Scanner;
+
+class MyClass{
+        public static void main(String [] args){
+                Scanner sc = new Scanner(System.in);
+                System.out.println(" enter the number you want table of");
+                int N = sc.nextInt();
+                int mult = 1;
+                for( int i = 1; i<=10 ; i++){
+                        mult = N*i ;
+                        System.out.println(mult);
+                }
+        }
+}
+
+Que 4 =====================================================
+Write a program to print the multiplication table in reverse order
+
+import java.util.Scanner;
+
+class MyClass{
+        public static void main(String [] args){
+                Scanner sc = new Scanner(System.in);
+                System.out.println(" enter the number n you want to add ");
+                int N = sc.nextInt();
+                int mult = 1;
+                for( int i = 10; i>=1 ; i--){
+                        mult = N*i ;
+                        System.out.println(mult);
+                }
+        }
+}
+
+Que 5 ========================================================
+Write a program to find the factorial of a number
+
+import java.util.Scanner;
+
+class MyClass{
+        public static void main(String [] args){
+                Scanner sc = new Scanner(System.in);
+                System.out.println(" enter the number n you want to factorial of ");
+                int N = sc.nextInt();
+                int fact = 1;
+                for( int i = 1; i<=N ; i++){
+                        fact = fact*i;
+                }
+                System.out.println(fact);
+        }
+}
+
+Que 6 ==========================================================
+Write the program to calculate the sum of the number occuring in the table of 8
+
+import java.util.Scanner;
+
+class MyClass{
+        public static void main(String [] args){
+                Scanner sc = new Scanner(System.in);
+                System.out.println(" enter the number n you want to factorial of ");
+                int N = sc.nextInt();
+                int sum = 0;
+                for(int i = 1; i<= 10 ; i++){
+                        int mult = N*i;
+                        sum = sum + mult;
+                }
+                System.out.println(sum);
+        }
+}
