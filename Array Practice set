@@ -42,7 +42,19 @@ class MyClass{
 
 ========================= QUE 3 ============================
 
-Calculate the average marks from an array containing marks of all students in Physocs using for each loop
+Calculate the average marks from an array containing marks of all students in Physics using for each loop
+
+class MyClass{
+        public static void main(String [] st){
+
+                float [] arr = {57,76,44,54,87,67};
+                float sum = 0;
+                for(float element : arr){
+                        sum += element;
+                }
+                System.out.println(sum/arr.length);
+        }
+}
 
 ========================= QUE 4 ============================
 
